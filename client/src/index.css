@@ -1,0 +1,27 @@
+
+:root {
+  --bg-dark: #0f111a;
+  --bg-card: #161b22; /* Slightly lighter for inputs/cards */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --text-main: #a8a8a8;
+  --input-text: #ffffff;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --success: #10b981;
+  --font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+

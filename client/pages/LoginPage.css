@@ -1,0 +1,100 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  border: 1px solid red;
+  margin: 0 auto;
+  /* height: 50rem; */
+  /* width: 50rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  /* justify-content: center; */
+}
+
+.left-col {
+  border: 1px solid white;
+  width: 40%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 1.5rem;
+}
+.right-col {
+  border: 1px solid white;
+  width: 60%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  gap: 1;
+}
+
+.nav {
+  /* border: 1px solid red; */
+  border-radius: 9px;
+  display: flex;
+  /* margin: 0 auto; */
+  padding: 0.3rem;
+  background-color: var(--border-color);
+  justify-content: center;
+  align-items: center;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.nav li {
+  /* border: 1px solid white; */
+  border-radius: 9px;
+  width: 12rem;
+  height: 3rem;
+  padding: 0.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-active {
+  background-color: var(--bg-card);
+  transition: all;
+}
+
+.email-container,
+.password-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 20px;
+}
+form #email,
+#password {
+  background-color: var(--bg-card);
+  border: none;
+  height: 3rem;
+  outline: none;
+  font-size: 16px;
+  padding: 1rem;
+  color: var(--text-main);
+}
+
+.forgot-password-container {
+  border: 1px solid white;
+  border-radius: 9px;
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
