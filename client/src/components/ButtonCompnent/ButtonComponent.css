@@ -1,0 +1,53 @@
+.btn {
+  border-radius: var( --border-radius);
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.7rem;
+  /* font-weight: 700; */
+}
+.btn:hover{
+    /* transform: scale(1.05); */
+    box-shadow: 0 0 0 2px black,
+    0 0 0 4px black,blue;
+}
+
+
+.btn--primary {
+  /* border: none; */
+  background-color: rgb(0, 102, 255);
+  color: white;
+}
+/* .btn--primary:hover {
+  border: 1px solid blue;
+  background-color: #fff;
+  color: blue;
+} */
+
+.btn--secondary {
+  background-color: #fff;
+  color: blue;
+}
+/* .btn--secondary:hover {
+  background-color: blue;
+  color: white;
+} */
+
+.btn--sm {
+  width: 6rem;
+  /* padding: 1rem; */
+}
+
+.btn--md {
+  width: 10rem;
+  /* padding: 1rem; */
+  /* font-size: 18px; */
+}
+
+.btn--lg{
+    width: 100%;
+    padding: 1rem;
+    font-size: 18px;
+
+}

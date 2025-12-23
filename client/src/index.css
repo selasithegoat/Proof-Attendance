@@ -8,8 +8,10 @@
   --input-text: #ffffff;
   --text-muted: #94a3b8;
   --border-color: #334155;
+  --border-radius: 9px;
   --success: #10b981;
   --font-family: "Inter", system-ui, -apple-system, sans-serif;
+
 }
 
 *{

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "../src/components/ButtonCompnent/ButtonComponent";
 import "./LoginPage.css";
 
 function LoginPage() {
@@ -56,7 +57,15 @@ function LoginPage() {
               </div>
               <Link>Forgot password?</Link>
             </div>
+            <div className="submit-btn">
+              <Button variant="primary" className="btn--lg">Sign In</Button>
+            </div>
           </form>
+          <div className="third-party-login">
+            <div className="line-separator">
+              <p>Or continue with</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="right-col"></div>

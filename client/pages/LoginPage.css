@@ -42,7 +42,7 @@
 
 .nav {
   /* border: 1px solid red; */
-  border-radius: 9px;
+  border-radius: var( --border-radius);
   display: flex;
   /* margin: 0 auto; */
   padding: 0.3rem;
@@ -58,7 +58,7 @@
 
 .nav li {
   /* border: 1px solid white; */
-  border-radius: 9px;
+  border-radius: var( --border-radius);
   width: 12rem;
   height: 3rem;
   padding: 0.7rem;
@@ -92,9 +92,24 @@ form #email,
 
 .forgot-password-container {
   border: 1px solid white;
-  border-radius: 9px;
+  border-radius: var( --border-radius);
   width: 25rem;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+}
+
+.line-separator{
+  border: 1px solid white;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.line-separator::before{
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 2px;
+  background-color: #fff;
+
 }
