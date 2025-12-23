@@ -5,32 +5,44 @@
   height: 100vh;
 }
 
-.login-container {
-  border: 1px solid red;
-  margin: 0 auto;
-  /* height: 50rem; */
-  /* width: 50rem; */
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  /* justify-content: center; */
-}
 
 .left-col {
   border: 1px solid white;
   width: 40%;
-  height: 100%;
-  flex: 1;
+  min-height: 100vh;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   row-gap: 1.5rem;
+
 }
+
+.login-container {
+border: 1px solid red;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  
+  /* Change flex-shrink to 0 so the form doesn't try to get crushed */
+  flex-shrink: 0; 
+  
+  max-width: 100%;
+  
+  /* Optional: Add width to keep it looking like a form card */
+  width: 100%; 
+  max-width: 400px; /* Adjust based on your design preferences */
+  
+
+}
+
 .right-col {
   border: 1px solid white;
   width: 60%;
-  height: 100%;
+  min-height: 100vh;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -42,28 +54,34 @@
 
 .nav {
   /* border: 1px solid red; */
-  border-radius: var( --border-radius);
+  border-radius: var(--border-radius);
   display: flex;
   /* margin: 0 auto; */
+  width: 100%;
   padding: 0.3rem;
   background-color: var(--border-color);
   justify-content: center;
   align-items: center;
 }
 .nav ul {
+  border: 1px solid red;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+
   gap: 0.4rem;
+  width: 20rem;
+  max-width: 100%;
 }
 
 .nav li {
   /* border: 1px solid white; */
-  border-radius: var( --border-radius);
-  width: 12rem;
+  border-radius: var(--border-radius);
   height: 3rem;
   padding: 0.7rem;
   text-align: center;
   cursor: pointer;
+  flex: 1 1;
 }
 .nav-active {
   background-color: var(--bg-card);
@@ -92,24 +110,28 @@ form #email,
 
 .forgot-password-container {
   border: 1px solid white;
-  border-radius: var( --border-radius);
+  border-radius: var(--border-radius);
   width: 25rem;
+  max-width: 100%;
+
   display: flex;
   justify-content: space-between;
   text-decoration: none;
 }
 
-.line-separator{
-  border: 1px solid white;
-  width: fit-content;
-  margin: 0 auto;
+.line-separator {
+display: flex;         /* 1. Makes the pseudo-elements act like flex items */
+  align-items: center;   /* 2. Vertically centers the lines with the text */
+  color: #6c757d;        /* Text color (grayish) */
+  gap: 1rem;             /* 3. Adds space between the text and the lines */
+  margin: 2rem 0;        /* Optional spacing around the whole separator */
+  width: 100%;
 }
 
-.line-separator::before{
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 2px;
-  background-color: #fff;
-
+.line-separator::before,
+.line-separator::after {
+  content: "";           /* Essential: creates the fake element */
+  flex: 1;               /* 4. The Magic: "Grow to fill all empty space" */
+  height: 1px;           /* Thickness of the line */
+  background-color: #3e444e; /* Color of the line (dark gray) */
 }
