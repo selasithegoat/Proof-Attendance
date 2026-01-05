@@ -2,7 +2,8 @@
 :root {
   --bg-dark: #0f111a;
   --bg-card: #161b22; /* Slightly lighter for inputs/cards */
-  --primary: #2563eb;
+  --primary: #135bec;
+  --secondary: #192233;
   --primary-hover: #1d4ed8;
   --text-main: #a8a8a8;
   --input-text: #ffffff;
